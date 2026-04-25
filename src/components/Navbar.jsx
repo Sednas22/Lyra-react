@@ -1,32 +1,35 @@
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  const location = useLocation();
-  const isActive = (path) => location.pathname === path;
-
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="max-w-4xl mx-auto flex justify-between items-center">
-        
-        <div className="text-white text-xl font-bold">
-          MeuApp
+    <>
+      <aside className="desktop-sidebar">
+        <div className="sidebar-logo">LYRA</div>
+
+        <nav className="sidebar-nav">
+          <NavLink to="/" className="sidebar-link">Início</NavLink>
+          <NavLink to="/resumo" className="sidebar-link">Resumo</NavLink>
+          <NavLink to="/alimentacao" className="sidebar-link">Alimentação</NavLink>
+          <NavLink to="/sono" className="sidebar-link">Sono</NavLink>
+          <NavLink to="/passos" className="sidebar-link">Passos</NavLink>
+          <NavLink to="/exercicio" className="sidebar-link">Exercícios</NavLink>
+          <NavLink to="/avatar" className="sidebar-link">Avatar</NavLink>
+          <NavLink to="/loja" className="sidebar-link">Loja</NavLink>
+        </nav>
+
+        <div className="sidebar-badge">
+          <span className="dot"></span>
+          <span>-- pontos</span>
         </div>
-        <div className="flex space-x-6">
-          <Link
-            to="/" // Define o destino do link como a página inicial
-            className={`px-3 py-2 rounded transition-colors ${
-              // Verifica se o link está ativo e aplica estilos diferentes
-              isActive('/') 
-                ? 'bg-blue-600 text-white' // Cor de fundo azul se o link estiver ativo
-                : 'text-gray-300 hover:text-white hover:bg-gray-700' // Estilo normal para o link
-            }`}
-          >Home</Link>
-          <Link to="/resumo">resumo</Link>
-          <Link to="/avatar">avatar</Link>
-          <Link to="/loja">Loja</Link>
-        </div>
-      </div>
-    </nav>
+      </aside>
+
+      <nav className="bottom-nav">
+        <NavLink to="/" className="nav-item">Início</NavLink>
+        <NavLink to="/resumo" className="nav-item">Resumo</NavLink>
+        <NavLink to="/avatar" className="nav-item">Avatar</NavLink>
+        <NavLink to="/loja" className="nav-item">Loja</NavLink>
+      </nav>
+    </>
   );
 }
 
