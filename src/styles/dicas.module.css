@@ -8,6 +8,7 @@
 
 :root {
     --green-mid: #2db56e;
+    --green-pale: #f3fbf6;
     --text-main: #1a2e1f;
     --text-muted: #6b8f71;
     --white: #ffffff;
@@ -44,12 +45,12 @@ a {
   padding-bottom: 72px;
 }
 
-.scroll-content {
+.scrollContent {
     flex: 1;
     overflow-y: auto;
 }
 
-.app-header {
+.appHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,7 +61,7 @@ a {
     z-index: 10;
 }
 
-.app-header h1 {
+.appHeader h1 {
     font-size: 1.35rem;
     font-weight: 900;
     color: var(--green-mid);
@@ -68,7 +69,7 @@ a {
     text-align: center;
 }
 
-.btn-icon {
+.btnIcon {
     background: none;
     border: none;
     cursor: pointer;
@@ -81,11 +82,15 @@ a {
     height: 32px;
 }
 
-.header-spacer {
+.btnBack {
+    text-decoration: none;
+}
+
+.headerSpacer {
     width: 32px;
 }
 
-.tip-card {
+.tipCard {
     background: var(--white);
     border-radius: 20px;
     padding: 22px 20px 24px;
@@ -93,36 +98,34 @@ a {
     box-shadow: var(--shadow-soft);
 }
 
-.tip-heading {
+.tipHeading {
     font-size: 1rem;
     font-weight: 900;
     color: var(--text-main);
     margin-bottom: 12px;
 }
 
-.tip-text {
+.tipText {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
     line-height: 1.65;
 }
 
-.bottom-nav {
+.bottomNav {
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    /* max-width: 420px; */
     background: var(--white);
     border-top: 1px solid #eaf0ec;
     display: flex;
     z-index: 100;
     box-shadow: 0 -8px 26px rgba(30, 100, 60, 0.08);
-    /* border-radius: 50px; */
 }
 
-.nav-item {
+.navItem {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -140,28 +143,24 @@ a {
     cursor: pointer;
 }
 
-.nav-item svg {
+.navItem svg {
     width: 24px;
     height: 24px;
 }
 
-.nav-item.active {
+.navItem.active {
     color: var(--green-mid);
 }
 
-.nav-item.active svg {
+.navItem.active svg {
     stroke: var(--green-mid);
 }
 
-.desktop-sidebar {
+.desktopSidebar {
     display: none;
 }
 
-.desktop-header {
-    display: none;
-}
-
-.desktop-header {
+.desktopHeader {
     display: none;
 }
 
@@ -172,7 +171,7 @@ a {
         background: #eef6f1;
     }
 
-    .desktop-sidebar {
+    .desktopSidebar {
         display: flex;
         flex-direction: column;
         width: 240px;
@@ -187,7 +186,7 @@ a {
         gap: 8px;
     }
 
-    .sidebar-logo {
+    .sidebarLogo {
         font-size: 1.5rem;
         font-weight: 900;
         color: #fff;
@@ -196,14 +195,14 @@ a {
         padding: 0 8px;
     }
 
-    .sidebar-nav {
+    .sidebarNav {
         display: flex;
         flex-direction: column;
         gap: 4px;
         flex: 1;
     }
 
-    .sidebar-link {
+    .sidebarLink {
         display: flex;
         align-items: center;
         gap: 12px;
@@ -216,19 +215,19 @@ a {
         transition: background .15s, color .15s;
     }
 
-    .sidebar-link:hover,
-    .sidebar-link.active {
+    .sidebarLink:hover,
+    .sidebarLink.active {
         background: rgba(255, 255, 255, .18);
         color: #fff;
     }
 
-    .sidebar-link svg {
+    .sidebarLink svg {
         width: 20px;
         height: 20px;
         flex-shrink: 0;
     }
 
-    .sidebar-badge {
+    .sidebarBadge {
         margin-top: auto;
         background: rgba(255, 255, 255, .12);
         border-radius: 12px;
@@ -241,7 +240,7 @@ a {
         font-weight: 800;
     }
 
-    .sidebar-badge .dot {
+    .sidebarBadge .dot {
         width: 10px;
         height: 10px;
         background: #2db56e;
@@ -257,197 +256,30 @@ a {
         background: transparent;
     }
 
-    .app-header {
+    .appHeader {
         display: none;
     }
 
-    .name-bar {
+    .bottomNav {
         display: none;
     }
 
-    .bottom-nav {
-        display: none;
-    }
-
-    .scroll-content {
+    .scrollContent {
         overflow: visible;
         max-height: none;
         padding: 0 36px 36px;
     }
 
-    .desktop-header {
+    .desktopHeader {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 28px 36px 20px;
     }
 
-    .desktop-header h1 {
+    .desktopHeader h1 {
         font-size: 1.9rem;
         font-weight: 900;
         color: #1a2e1f;
-    }
-
-    .desktop-header-right {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .desktop-user-pill {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: #fff;
-        border-radius: 999px;
-        padding: 8px 16px;
-        box-shadow: 0 2px 12px rgba(30, 100, 60, .08);
-        font-size: .9rem;
-        font-weight: 800;
-        color: #1a2e1f;
-    }
-
-    .desktop-user-pill .dot {
-        width: 10px;
-        height: 10px;
-        background: #2db56e;
-        border-radius: 50%;
-    }
-
-    .section {
-        padding: 0;
-        margin-bottom: 24px;
-    }
-
-    .section-header {
-        margin-bottom: 14px;
-    }
-
-    .section-header h2 {
-        font-size: 1.25rem;
-    }
-
-    .banner {
-        margin: 0;
-        border-radius: 18px;
-    }
-
-    .tips-scroll {
-        flex-wrap: wrap;
-        overflow: visible;
-    }
-
-    .tip-card {
-        flex: 0 0 calc(50% - 6px);
-    }
-
-    .tip-paragraph {
-        padding: 4px 0 0;
-    }
-
-    .bar-chart {
-        height: 160px;
-    }
-
-    .chart-box {
-        border-radius: 18px;
-        padding: 24px;
-    }
-
-    .meals-list,
-    .exercise-list {
-        gap: 14px;
-    }
-
-    .meal-item,
-    .exercise-item {
-        padding: 18px 20px;
-        border-radius: 18px;
-    }
-
-    .meal-thumb,
-    .ex-thumb {
-        width: 54px;
-        height: 54px;
-    }
-
-    .desktop-grid {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        gap: 24px;
-        align-items: start;
-    }
-
-    .desktop-main {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .desktop-aside {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .shop-card {
-        padding: 18px;
-        gap: 18px;
-    }
-
-    .shop-card-image {
-        width: 90px;
-        height: 90px;
-    }
-
-    .summary-card {
-        padding: 24px;
-        gap: 28px;
-    }
-
-    .stat-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-    }
-
-    .stat-card {
-        padding: 20px;
-    }
-
-    .stat-value {
-        font-size: 1.7rem;
-    }
-}
-
-@media (min-width: 1100px) {
-    .scroll-content {
-        padding: 0 44px 44px;
-    }
-
-    .desktop-header {
-        padding: 28px 44px 20px;
-    }
-
-    .desktop-grid {
-        grid-template-columns: 1fr 340px;
-        gap: 28px;
-    }
-
-    .stat-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .tip-card {
-        flex: 0 0 calc(33.33% - 8px);
-    }
-
-    .bar-chart {
-        height: 180px;
-    }
-}
-
-@media (max-width: 380px) {
-    .app-header {
-        padding-inline: 14px;
     }
 }

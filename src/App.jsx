@@ -10,24 +10,23 @@ import Avatar from "./pages/Avatar";
 import Loja from "./pages/Loja";
 import Dash from "./pages/Dash";
 import Dicas from "./pages/Dicas";
-import "./styles/index.css";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resumo" element={<Resumo />} />
-        <Route path="/alimentacao" element={<Alimentacao />} />
-        <Route path="/sono" element={<Sono />} />
-        <Route path="/passos" element={<Passos />} />
-        <Route path="/exercicio" element={<Exercicio />} />
+        <Route path="/resumo/alimentacao" element={<Alimentacao />} />
+        <Route path="/resumo/sono" element={<Sono />} />
+        <Route path="/resumo/passos" element={<Passos />} />
+        <Route path="/resumo/exercicio" element={<Exercicio />} />
         <Route path="/avatar" element={<Avatar />} />
         <Route path="/loja" element={<Loja />} />
-        <Route path="/dash" element={<Dash />} />
-        <Route path="/dicas" element={<Dicas />} />
+        <Route path="/resumo/dash" element={<Dash />} />
+        <Route path="/resumo/dicas" element={<Dicas />} />
       </Routes>
     </Router>
   );
