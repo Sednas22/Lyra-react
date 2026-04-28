@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/index.module.css";
+import Sidebar from "../components/Sidebar";
+import BottomNav from "../components/BottomNav";
 
 function Resumo() {
   return (
     <div className={styles.app}>
-      
+      <Sidebar />
       <header className={styles.appHeader}>
         <h1>Resumo</h1>
 
@@ -156,6 +158,7 @@ function Resumo() {
         </p>
 
       </div>
+      <BottomNav />
     </div>
   );
 }

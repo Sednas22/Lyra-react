@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/alimentacao.module.css";
+import Sidebar from "../components/Sidebar";
+import BottomNav from "../components/BottomNav";
 
 function Alimentacao() {
   return (
     <div className={styles.app}>
+      <Sidebar />
       <header className={styles.appHeader}>
         <Link to="/resumo" className={`${styles.btnIcon} ${styles.btnBack}`}>
           ←
@@ -77,6 +80,7 @@ function Alimentacao() {
           </ul>
         </section>
       </div>
+      <BottomNav />
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/dicas.module.css";
+import Sidebar from "../components/Sidebar";
+import BottomNav from "../components/BottomNav";
 
 function Dicas() {
   return (
     <div className={styles.app}>
-
+      <Sidebar />
       <header className={styles.appHeader}>
         <Link to="/resumo" className={`${styles.btnIcon} ${styles.btnBack}`} aria-label="Voltar">←</Link>
 
@@ -36,7 +38,7 @@ function Dicas() {
         </article>
 
       </main>
-
+      <BottomNav />
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import "../styles/sono.css";
+import Sidebar from "../components/Sidebar";
+import BottomNav from "../components/BottomNav";
 
 function Sono() {
   return (
+    
     <div className="app">
-
+      <Sidebar />
       <header className="app-header">
         <Link to="/resumo" className="btn-icon btn-back">←</Link>
         <h1>Sono</h1>
@@ -75,7 +78,7 @@ function Sono() {
         </section>
 
       </main>
-
+      <BottomNav/>
     </div>
   );
 }

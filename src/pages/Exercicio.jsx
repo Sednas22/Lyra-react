@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import "../styles/exercicio.css";
+import Sidebar from "../components/Sidebar";
+import BottomNav from "../components/BottomNav";
 
 function Exercicio() {
   return (
     <div className="app">
+      <Sidebar />
       <header className="app-header">
         <Link to="/resumo" className="btn-icon btn-back" aria-label="Voltar">←</Link>
         <h1>Exercício</h1>
@@ -146,7 +149,7 @@ function Exercicio() {
           </ul>
         </section>
       </main>
-
+      <BottomNav />
     </div>
   );
 }
