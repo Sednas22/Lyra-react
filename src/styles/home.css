@@ -38,18 +38,28 @@ img {
 }
 
 .app-menu {
-  width: 100%;
-  /* max-width: 420px; */
-  min-height: 100dvh;
-  background: var(--white);
-  margin: 0 auto;
+    width: 100vw !important;
+    min-height: 100dvh;
+    background: var(--white) !important;
+    margin: 0;
+    padding: 0 !important;
+    display: block !important;
 }
+
 .menu-main {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  padding: 28px 18px 36px;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 18px 36px;
+    box-sizing: border-box;
 }
+
+body {
+    display: block !important;
+    overflow-x: hidden;
+}
+
 .menu-header {
   margin-bottom: 34px;
 }
@@ -112,7 +122,7 @@ img {
   }
 
   .app-menu {
-    display: none;
+    display: none !important;
   }
 
   .landing-wrapper {

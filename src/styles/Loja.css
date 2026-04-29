@@ -128,7 +128,7 @@
 .shop-card-secondary .shop-card-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .shop-card-secondary h3 {

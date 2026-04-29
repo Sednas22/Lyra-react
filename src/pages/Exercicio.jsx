@@ -3,6 +3,14 @@ import "../styles/exercicio.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
 
+const svg = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="2" />
+                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
+                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
+                  <line x1="4" y1="12" x2="7" y2="12" />
+                  <line x1="17" y1="12" x2="20" y2="12" />
+                </svg>;
+
 function Exercicio() {
   return (
     <div className="app">
@@ -21,13 +29,7 @@ function Exercicio() {
 
             <li className="exercise-item" role="listitem">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -38,13 +40,7 @@ function Exercicio() {
 
             <li className="exercise-item" role="listitem">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -55,13 +51,7 @@ function Exercicio() {
 
             <li className="exercise-item" role="listitem">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -72,13 +62,7 @@ function Exercicio() {
 
             <li className="exercise-item" role="listitem">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -97,13 +81,7 @@ function Exercicio() {
 
             <li className="exercise-item">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -114,13 +92,7 @@ function Exercicio() {
 
             <li className="exercise-item">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
@@ -131,13 +103,7 @@ function Exercicio() {
 
             <li className="exercise-item">
               <div className="ex-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M6.5 6.5a6 6 0 0 0 0 11" />
-                  <path d="M17.5 6.5a6 6 0 0 1 0 11" />
-                  <line x1="4" y1="12" x2="7" y2="12" />
-                  <line x1="17" y1="12" x2="20" y2="12" />
-                </svg>
+                {svg}
               </div>
 
               <div className="ex-info">
