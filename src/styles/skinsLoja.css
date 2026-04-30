@@ -251,6 +251,19 @@
         background: #eef6f1;
     }
 
+    .carousel-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 0 16px 12px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    }
+
     .desktop-sidebar {
         display: flex;
         flex-direction: column;
@@ -530,4 +543,14 @@
     .app-header {
         padding-inline: 14px;
     }
+}
+
+.carousel-item {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.item-card {
+    width: 100% !important;
+    justify-content: space-between !important;
 }

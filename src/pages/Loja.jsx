@@ -16,14 +16,13 @@ const svg = {
   </svg>
   ),
   relogio: (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                </svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+    </svg>
   ),
   lyrium: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="yellow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffd700">
                     <circle cx="12" cy="12" r="10" />
                     <text x="12" y="15" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">◎</text>
                   </svg>
@@ -60,7 +59,7 @@ function Loja() {
             <h2>Roupas & Skins</h2>
           </div>
 
-          <Link to="/loja/skins" className="shop-card-link">
+          <Link to="/loja/roupas" className="shop-card-link">
             <article className="shop-card shop-card-featured">
               <div className="shop-card-image">
                 <img src={cabide} alt="Roupas e Skins disponíveis" />

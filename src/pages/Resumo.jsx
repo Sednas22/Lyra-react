@@ -18,7 +18,7 @@ const svg = {
                 </svg>
   ),
   lyrium: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="yellow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffd700">
                     <circle cx="12" cy="12" r="10" />
                     <text x="12" y="15" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">◎</text>
                   </svg>

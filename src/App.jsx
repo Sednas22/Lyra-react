@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/BottomNav";
 import Home from "./pages/Home";
 import Resumo from "./pages/Resumo";
 import Alimentacao from "./pages/Alimentacao";
@@ -10,6 +9,9 @@ import Avatar from "./pages/Avatar";
 import Loja from "./pages/Loja";
 import Dash from "./pages/Dash";
 import Dicas from "./pages/Dicas";
+import Roupas from "./pages/Roupas";
+import Personalidades from "./pages/Personalidades";
+import Tags from "./pages/Tags";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         <Route path="/loja" element={<Loja />} />
         <Route path="/resumo/dash" element={<Dash />} />
         <Route path="/resumo/dicas" element={<Dicas />} />
+        <Route path="/loja/roupas" element={<Roupas />} />
+        <Route path="/loja/personalidades" element={<Personalidades />} />
+        <Route path="/loja/tags" element={<Tags />} />
       </Routes>
     </Router>
   );
