@@ -38,24 +38,38 @@ function Resumo() {
     <div className={styles.app}>
       <Sidebar />
       <header className={styles.appHeader}>
-        <h1>Resumo</h1>
-
-        <div className={styles.headerActions}>
-          <div className={styles.badgePoints}>
-            <span>--</span>
-            {svg.lyrium}
-          </div>
-
-          <button className={styles.btnIcon}>{svg.notificacao}</button>
-        </div>
-      </header>
-
-      <div className={styles.nameBar}>
-        <span>Nome</span>
-        {svg.relogio}
-      </div>
+                    <h1>Loja</h1>
+            
+                    <div className={styles.headerActions}>
+                      <div className={styles.badgePoints}>
+                        <span>--</span>
+                        {svg.lyrium}
+                      </div>
+            
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+                  
+            <header className={styles.desktopHeader}>
+                    <h1>Loja</h1>
+            
+                    <div className={styles.headerActions}>
+                      <div className={styles.desktopUserPill}>
+                        <span>Nome</span>
+                        {svg.relogio}
+                      </div>
+            
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+            
+                  <div className={styles.nameBar}>
+                    <span>Nome</span>
+                    {svg.relogio}
+                  </div>
 
       <div className={styles.scrollContent}>
+        <div className={styles.desktopMain}>
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Dashboard</h2>
@@ -189,6 +203,7 @@ function Resumo() {
           e realizar seu exame é essencial para o monitoramento preventivo.
         </p>
 
+      </div>
       </div>
       <BottomNav />
     </div>

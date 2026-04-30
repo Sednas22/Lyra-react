@@ -35,22 +35,35 @@ function Tags() {
     <div className={styles.app}>
       <Sidebar />
       <header className={styles.appHeader}>
-            <h1>Loja</h1>
+                    <h1>Loja</h1>
             
-            <div className={styles.headerActions}>
-                <div className={styles.badgePoints}>
-                    <span>--</span>
-                    {svg.lyrium}
-                </div>
+                    <div className={styles.headerActions}>
+                      <div className={styles.badgePoints}>
+                        <span>--</span>
+                        {svg.lyrium}
+                      </div>
             
-                <button className={styles.btnIcon}>{svg.notificacao}</button>
-            </div>
-        </header>
-
-        <div className={styles.nameBar}>
-            <span>Nome</span>
-            {svg.relogio}
-        </div>
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+                  
+            <header className={styles.desktopHeader}>
+                    <h1>Loja</h1>
+            
+                    <div className={styles.headerActions}>
+                      <div className={styles.desktopUserPill}>
+                        <span>Nome</span>
+                        {svg.relogio}
+                      </div>
+            
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+            
+                  <div className={styles.nameBar}>
+                    <span>Nome</span>
+                    {svg.relogio}
+                  </div>
 
         <div className={styles.scrollContent}>
 
@@ -58,69 +71,69 @@ function Tags() {
                 <Link to="/loja" className="back-button" aria-label="Voltar para a loja">← Tags</Link>
             </div>
 
-            <main class="tags-store">
-                <section class="rarity-section" aria-labelledby="raras-title">
-                    <h2 id="raras-title" class="rarity-title">Raras</h2>
+            <main className="tags-store">
+                <section className="rarity-section" aria-labelledby="raras-title">
+                    <h2 id="raras-title" className="rarity-title">Raras</h2>
 
-                    <ul class="tags-grid" role="list">
-                        <li class="tag-item">
-                            <article class="tag-card">
+                    <ul className="tags-grid" role="list">
+                        <li className="tag-item">
+                            <article className="tag-card">
                                 <img src={guardiao} alt="Guardião do coração"></img>
-                                <div class="tag-content">
-                                    <p class="tag-price">1500 <span>{svg.lyrium}</span></p>
-                                    <button class="btn-buy-tag" type="button">Comprar</button>
+                                <div className="tag-content">
+                                    <p className="tag-price">1500 <span>{svg.lyrium}</span></p>
+                                    <button className="btn-buy-tag" type="button">Comprar</button>
                                 </div>
                             </article>
                         </li>
 
-                        <li class="tag-item">
-                            <article class="tag-card">
+                        <li className="tag-item">
+                            <article className="tag-card">
                                 <img src={maratonista} alt="Maratonista"></img>
-                                <div class="tag-content">
-                                    <p class="tag-price">1500 <span>{svg.lyrium}</span></p>
-                                    <button class="btn-buy-tag" type="button">Comprar</button>
+                                <div className="tag-content">
+                                    <p className="tag-price">1500 <span>{svg.lyrium}</span></p>
+                                    <button className="btn-buy-tag" type="button">Comprar</button>
                                 </div>
                             </article>
                         </li>
                     </ul>
                 </section>
 
-                <section class="rarity-section" aria-labelledby="epicas-title">
-                    <h2 id="epicas-title" class="rarity-title">Épicas</h2>
+                <section className="rarity-section" aria-labelledby="epicas-title">
+                    <h2 id="epicas-title" className="rarity-title">Épicas</h2>
 
-                    <ul class="tags-grid" role="list">
-                        <li class="tag-item">
-                            <article class="tag-card">
+                    <ul className="tags-grid" role="list">
+                        <li className="tag-item">
+                            <article className="tag-card">
                                 <img src={mestre} alt="Mestre do Sono"></img>
-                                <div class="tag-content">
-                                    <p class="tag-price">3000 <span>{svg.lyrium}</span></p>
-                                    <button class="btn-buy-tag" type="button">Comprar</button>
+                                <div className="tag-content">
+                                    <p className="tag-price">3000 <span>{svg.lyrium}</span></p>
+                                    <button className="btn-buy-tag" type="button">Comprar</button>
                                 </div>
                             </article>
                         </li>
 
-                        <li class="tag-item">
-                            <article class="tag-card">
+                        <li className="tag-item">
+                            <article className="tag-card">
                                 <img src={arquiteto} alt="Arquiteto da Vida"></img>
-                                <div class="tag-content">
-                                    <p class="tag-price">3000 <span>{svg.lyrium}</span></p>
-                                    <button class="btn-buy-tag" type="button">Comprar</button>
+                                <div className="tag-content">
+                                    <p className="tag-price">3000 <span>{svg.lyrium}</span></p>
+                                    <button className="btn-buy-tag" type="button">Comprar</button>
                                 </div>
                             </article>
                         </li>
                     </ul>
                 </section>
 
-                <section class="rarity-section rarity-section-last" aria-labelledby="lendaria-title">
-                    <h2 id="lendaria-title" class="rarity-title">Lendária</h2>
+                <section className="rarity-section rarity-section-last" aria-labelledby="lendaria-title">
+                    <h2 id="lendaria-title" className="rarity-title">Lendária</h2>
 
-                    <ul class="tags-grid tags-grid-single" role="list">
-                        <li class="tag-item">
-                            <article class="tag-card">
+                    <ul className="tags-grid tags-grid-single" role="list">
+                        <li className="tag-item">
+                            <article className="tag-card">
                                 <img src={navegador} alt="Navegador da Vitalidade"></img>
-                                <div class="tag-content">
-                                    <p class="tag-price">6000 <span>{svg.lyrium}</span></p>
-                                    <button class="btn-buy-tag" type="button">Comprar</button>
+                                <div className="tag-content">
+                                    <p className="tag-price">6000 <span>{svg.lyrium}</span></p>
+                                    <button className="btn-buy-tag" type="button">Comprar</button>
                                 </div>
                             </article>
                         </li>

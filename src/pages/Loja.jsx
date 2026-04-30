@@ -16,10 +16,11 @@ const svg = {
   </svg>
   ),
   relogio: (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <polyline points="12 6 12 12 16 14" />
-    </svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
   ),
   lyrium: (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffd700">
@@ -41,6 +42,19 @@ function Loja() {
                 <div className={styles.badgePoints}>
                   <span>--</span>
                   {svg.lyrium}
+                </div>
+      
+                <button className={styles.btnIcon}>{svg.notificacao}</button>
+              </div>
+            </header>
+            
+      <header className={styles.desktopHeader}>
+              <h1>Loja</h1>
+      
+              <div className={styles.headerActions}>
+                <div className={styles.desktopUserPill}>
+                  <span>Nome</span>
+                  {svg.relogio}
                 </div>
       
                 <button className={styles.btnIcon}>{svg.notificacao}</button>

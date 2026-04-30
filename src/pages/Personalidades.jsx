@@ -35,22 +35,35 @@ function Personalidades() {
     <div className={styles.app}>
       <Sidebar />
       <header className={styles.appHeader}>
-            <h1>Loja</h1>
+                    <h1>Loja</h1>
             
-            <div className={styles.headerActions}>
-                <div className={styles.badgePoints}>
-                    <span>--</span>
-                    {svg.lyrium}
-                </div>
+                    <div className={styles.headerActions}>
+                      <div className={styles.badgePoints}>
+                        <span>--</span>
+                        {svg.lyrium}
+                      </div>
             
-                <button className={styles.btnIcon}>{svg.notificacao}</button>
-            </div>
-        </header>
-
-        <div className={styles.nameBar}>
-            <span>Nome</span>
-            {svg.relogio}
-        </div>
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+                  
+            <header className={styles.desktopHeader}>
+                    <h1>Loja</h1>
+            
+                    <div className={styles.headerActions}>
+                      <div className={styles.desktopUserPill}>
+                        <span>Nome</span>
+                        {svg.relogio}
+                      </div>
+            
+                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
+            
+                  <div className={styles.nameBar}>
+                    <span>Nome</span>
+                    {svg.relogio}
+                  </div>
 
         <div className={styles.scrollContent}>
 

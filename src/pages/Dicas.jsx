@@ -1,12 +1,47 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/dicas.module.css";
+import styles2 from "../styles/index.module.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
+
+const svg = {
+  notificacao: (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+  <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+  <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+  </svg>
+  ),
+  relogio: (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+  ),
+  lyrium: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffd700">
+                    <circle cx="12" cy="12" r="10" />
+                    <text x="12" y="15" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">◎</text>
+                  </svg>
+  ),
+}
 
 function Dicas() {
   return (
     <div className={styles.app}>
       <Sidebar />
+      <header className={styles2.desktopHeader}>
+                    <h1>Dicas</h1>
+            
+                    <div className={styles2.headerActions}>
+                      <div className={styles2.desktopUserPill}>
+                        <span>Nome</span>
+                        {svg.relogio}
+                      </div>
+            
+                      <button className={styles2.btnIcon}>{svg.notificacao}</button>
+                    </div>
+                  </header>
       <header className={styles.appHeader}>
         <Link to="/resumo" className={`${styles.btnIcon} ${styles.btnBack}`} aria-label="Voltar">←</Link>
 
