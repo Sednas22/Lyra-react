@@ -108,7 +108,7 @@ export default function LyriumModal({ type, itemName, price, onConfirm, onCancel
       <div style={overlayStyle} onClick={onCancel}>
         <div style={sheetStyle} onClick={e => e.stopPropagation()}>
           <div style={headerStyle}>
-            <h2 style={{ margin: 0, fontSize: "1.1rem" }}>Item recebido! 🎉</h2>
+            <h2 style={{ margin: 0, fontSize: "1.1rem" }}>Item recebido!</h2>
             <button style={closeBtnStyle} onClick={onCancel}>✕</button>
           </div>
           <p style={bodyStyle}>

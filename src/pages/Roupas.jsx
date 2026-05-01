@@ -17,7 +17,7 @@ import homemaranha from "../assets/homemAranha.png";
 import robo from "../assets/robo.png";
 import caipira from "../assets/caipira.png";
 import neymar from "../assets/neymar.png";
-import Notificacao from "../components/notificacao";
+import Notificacao from "../components/Notificacao";
 
 const LyriumIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffd700">
@@ -66,13 +66,12 @@ const bodyStyle  = { color:"#8a9bb5", lineHeight:1.5, fontSize:".95rem" };
 function Roupas() {
   const { points, spendPoints, buyItem, hasBought } = useLyrium();
 
-  // modal: null | { type: "confirm"|"insufficient", item }
   const [modal, setModal] = useState(null);
 
   const categories = [...new Set(ITEMS.map(i => i.category))];
 
   function handleBuyClick(item) {
-    console.log("handleBuyClick chamado", item.label, "points:", points); // debug
+    console.log("handleBuyClick chamado", item.label, "points:", points); 
     if (hasBought(item.id)) return;
     setModal({ type: points < item.price ? "insufficient" : "confirm", item });
   }

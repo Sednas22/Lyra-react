@@ -147,7 +147,7 @@ a {
 }
 
 .tabPill {
-    flex: 0 0 auto;
+    /*flex: none;*/
     min-width: max-content;
     padding: 9px 16px;
     border-radius: var(--radiusPill);

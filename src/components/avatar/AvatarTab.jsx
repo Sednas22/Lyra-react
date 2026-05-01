@@ -9,7 +9,7 @@ const IconCheck = (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
 const IconLock = (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>);
 
 const CHESTS = [
-  { id: "avatar_bau_1", unlocked: true,  badge: "success", prizePoints: 100, label: "Baú 1" },
+  { id: "avatar_bau_1", unlocked: true,  badge: "sparkle", prizePoints: 100, label: "Baú 1" },
   { id: "avatar_bau_2", unlocked: true, badge: "sparkle", prizePoints: 150, label: "Baú 2" },
   { id: "avatar_bau_3", unlocked: true, badge: "sparkle", prizePoints: 200, label: "Baú 3" },
   { id: "avatar_bau_4", unlocked: true,  badge: "leaf",    prizePoints: 75,  label: "Baú 4" },
@@ -134,7 +134,7 @@ function AvatarTab({ styles: s }) {
         <div className={s.modalOverlay} role="dialog" aria-modal="true" onClick={() => setModal(null)}>
           <div className={s.modalSheet} onClick={(e) => e.stopPropagation()}>
             <div className={s.modalHeader}>
-              <h2>Baú aberto! 🎉</h2>
+              <h2>Baú aberto!</h2>
               <button className={s.modalClose} type="button" onClick={() => setModal(null)} aria-label="Fechar">✕</button>
             </div>
             <p className={s.modalEmpty} style={{marginBottom:"1rem"}}>

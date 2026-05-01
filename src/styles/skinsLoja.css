@@ -70,7 +70,6 @@
 .carousel-item-x {
     width: 160px;
     height: auto;
-
 }
 
 .carousel-item {
@@ -553,4 +552,14 @@
 .item-card {
     width: 100% !important;
     justify-content: space-between !important;
+}
+
+.carousel-scroll {
+    user-select: none !important;
+}
+
+.carousel-scroll button {
+    pointer-events: auto !important;
+    z-index: 10 !important;
+    position: relative !important;
 }
