@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LyriumProvider } from "./context/LyriumContext";
 import Home from "./pages/Home";
 import Resumo from "./pages/Resumo";
 import Alimentacao from "./pages/Alimentacao";
@@ -15,6 +16,7 @@ import Tags from "./pages/Tags";
 
 function App() {
   return (
+    <LyriumProvider>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,6 +34,7 @@ function App() {
         <Route path="/loja/tags" element={<Tags />} />
       </Routes>
     </Router>
+    </LyriumProvider>
   );
 }
 

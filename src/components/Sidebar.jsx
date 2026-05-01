@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import styles from "../styles/index.module.css"
+import { useLyrium } from "../context/LyriumContext";
 
 const svg = {
   lyrium: (
@@ -99,7 +100,7 @@ const navItems = [
 
 function Sidebar() {
   const location = useLocation()
-
+  const { points } = useLyrium();
   return (
     <aside className={styles.desktopSidebar}>
       <div className={styles.sidebarLogo}>LYRA</div>
@@ -121,7 +122,7 @@ function Sidebar() {
       </nav>
       <div className={styles.sidebarBadge}>
         {svg.lyrium}
-        <span>-- pontos</span>
+        <span>{points} pontos</span>
       </div>
     </aside>
   )

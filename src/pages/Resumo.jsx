@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { useLyrium } from "../context/LyriumContext";
 import styles from "../styles/index.module.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
+import Notificacao from "../components/notificacao";
 
 const svg = {
   notificacao: (
@@ -34,19 +36,20 @@ const svg = {
 }
 
 function Resumo() {
+  const { points } = useLyrium();
   return (
     <div className={styles.app}>
       <Sidebar />
       <header className={styles.appHeader}>
-                    <h1>Loja</h1>
+                    <h1>Resumo</h1>
             
                     <div className={styles.headerActions}>
                       <div className={styles.badgePoints}>
-                        <span>--</span>
+                        <span>{points}</span>
                         {svg.lyrium}
                       </div>
             
-                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                      <Notificacao/>
                     </div>
                   </header>
                   
@@ -59,7 +62,7 @@ function Resumo() {
                         {svg.relogio}
                       </div>
             
-                      <button className={styles.btnIcon}>{svg.notificacao}</button>
+                      <Notificacao/>
                     </div>
                   </header>
             

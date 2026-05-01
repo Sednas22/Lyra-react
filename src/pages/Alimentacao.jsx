@@ -3,6 +3,7 @@ import styles from "../styles/alimentacao.module.css";
 import styles2 from "../styles/index.module.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
+import Notificacao from "../components/notificacao";
 
 const svg = {
   camera: (
@@ -57,7 +58,7 @@ function Alimentacao() {
                         {svg.relogio}
                       </div>
             
-                      <button className={styles2.btnIcon}>{svg.notificacao}</button>
+                      <Notificacao/>
                     </div>
                   </header>
       <header className={styles.appHeader}>

@@ -3,6 +3,7 @@ import "../styles/passos.css";
 import styles from "../styles/index.module.css"
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
+import Notificacao from "../components/notificacao";
 
 const svg = {
   notificacao: (
@@ -39,7 +40,7 @@ function Passos() {
                               {svg.relogio}
                             </div>
                   
-                            <button className={styles.btnIcon}>{svg.notificacao}</button>
+                            <Notificacao/>
                           </div>
                         </header>
 
