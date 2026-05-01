@@ -13,6 +13,8 @@ import Dicas from "./pages/Dicas";
 import Roupas from "./pages/Roupas";
 import Personalidades from "./pages/Personalidades";
 import Tags from "./pages/Tags";
+import Lgpd from "./pages/Lgpd"
+import Sincronizacao from "./pages/Sincronizacao"
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/loja/roupas" element={<Roupas />} />
         <Route path="/loja/personalidades" element={<Personalidades />} />
         <Route path="/loja/tags" element={<Tags />} />
+        <Route path="/lgpd" element={<Lgpd />} />
+        <Route path="/sincronizacao" element={<Sincronizacao />} />
       </Routes>
     </Router>
     </LyriumProvider>

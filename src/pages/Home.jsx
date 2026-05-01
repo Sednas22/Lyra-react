@@ -49,7 +49,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <Link to="/avatar" className="landing-cta">Acessar o Lyra →</Link>
+          <Link to="/lgpd" className="landing-cta">Acessar o Lyra →</Link>
         </div>
 
         <div className="landing-right">
@@ -95,7 +95,7 @@ function Home() {
             </nav>
           </section>
           <footer className="menu-footer">
-            <Link to="/avatar" className="brand-pill"><span>LYRA</span></Link>
+            <Link to="/lgpd" className="brand-pill"><span>LYRA</span></Link>
           </footer>
         </main>
       </div>
