@@ -1,5 +1,5 @@
 # Lyra — Care Plus
-Sprint desenvolvida para a disciplina de <b>Web Development</b> da FIAP 2026, como continuação de um protótipo criado em Front-end Design. Projeto apresentado ao curso de Engenharia de Software. Desenvolvido por: <br>
+<p>Sprint desenvolvida para a disciplina de <b>Web Development</b> da FIAP 2026, como continuação de um protótipo criado em Front-end Design. Projeto apresentado ao curso de Engenharia de Software. Desenvolvido por: </p>
 André Rosa Ferreira Filho - RM: 567149, <br>
 Cainã Sandes Batista - RM: 568571, <br>
 Michel Lima Benchimol - RM: 567345, <br>
