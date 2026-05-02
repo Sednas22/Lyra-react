@@ -3,7 +3,7 @@ import "../styles/exercicio.css";
 import styles from "../styles/index.module.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
-import Notificacao from "../components/notificacao";
+import Notificacao from "../components/Notificacao";
 
 const svg = {
   icone: (
