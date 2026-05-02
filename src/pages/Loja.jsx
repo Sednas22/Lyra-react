@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/index.module.css";
-import "../styles/loja.css";
+import "../styles/Loja.css";
 import BottomNav from "../components/BottomNav";
 import Sidebar from "../components/Sidebar";
 import LyriumModal from "../components/LyriumModal";
