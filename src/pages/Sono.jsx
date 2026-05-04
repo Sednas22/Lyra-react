@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../styles/sono.css";
 import styles from "../styles/index.module.css"
+import "../styles/sono.css";
 import Sidebar from "../components/Sidebar";
 import BottomNav from "../components/BottomNav";
 import Notificacao from "../components/Notificacao";
